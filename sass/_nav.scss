@@ -1,0 +1,60 @@
+.nav {
+
+   &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 10px 20px;
+   }
+
+   &__left {
+      position: relative;
+      background: url('../assets/img/green-texture.png') no-repeat center center/cover;
+      padding: 0 10px;
+      border-radius: 5px;
+
+      // &::after {
+      //    content: "";
+      //    position: absolute;
+      //    top: 8px;
+      //    left: 6px;
+      //    background: $color-primary;
+      //    width: 86px;
+      //    height: 58px;
+      //    border-radius: 20px;
+      //    z-index: 0;
+      // }
+
+      h2 {
+         position: relative;
+         z-index: 1;
+         font-size: 35px;
+         font-weight: 800;
+         background: url('../assets/img/repeat-white.png') no-repeat center center/cover;
+
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+      }
+   }
+
+   &__right {
+      list-style: none;
+   }
+
+   &__li {
+      display: inline-block;
+      margin: 0 8px;
+
+      a {
+         font-size: 20px;
+         font-weight: 600;
+         background: url('../assets/img/repeat-white.png') no-repeat center center/cover;
+
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+      }
+   }
+}
